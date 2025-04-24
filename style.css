@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  padding: 1em;
+
+  overflow-x: hidden;
+  background-color: #f6f0f0;
+}
+
+.initial-banner {
+  height: 99svh;
+  width: 99svw;
+}
+
+#initial-banner__video-container {
+  position: relative;
+  width: 97.9%;
+  /* height: 97svh; */
+  aspect-ratio: 16/9;
+  overflow: hidden;
+}
+
+#initial-banner__video {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  top: 0;
+}
+
+#initial-banner__video-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.233);
+  z-index: 2;
+}
+
+.video-container__text {
+  position: absolute;
+  left: 10%;
+  top: 20%;
+  padding: 3em;
+  z-index: 3;
+
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.video-container__text > h1 {
+  color: white;
+  font-weight: 700;
+  font-size: 3rem;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.video-container__text > h1 > span {
+  color: rgb(68, 0, 255);
+}
+
+.about-tokyo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 4em 3em;
+}
+
+.about-tokyo-container__img {
+  height: 60svh;
+  width: 30svw;
+
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.about-tokyo-container__txt-block {
+  width: 50%;
+  text-align: left;
+}
+
+.about-tokyo-container__txt-block > h2 {
+  margin-bottom: 0.5em;
+
+  font-weight: 700;
+  font-size: 2.2rem;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.about-tokyo-container__txt-block > p {
+  width: 80%;
+  font-size: 1.8rem;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.text-column-sect {
+  height: 185svh;
+}
+
+.text-column-sect__list {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.text-column-sect__list > h3 {
+  margin: 15% 0;
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.touristic-places-container__gallery {
+  height: 40svh;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0em;
+  flex-direction: row;
+}
+
+.touristic-places-container__gallery > img {
+  height: 60%;
+  width: 19%;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+}
+
+.touristic-places-container__gallery > img:hover {
+  transform: scale(120%);
+  transition: 0.8s;
+}
+
+.final-sect {
+  height: 25svh;
+}
+
+.final-sect__txt-block {
+  margin: 15% auto;
+  width: 60%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.144);
+}
+
+.final-sect__txt-block > h4 {
+  padding: 1em;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Noto Sans", sans-serif;
+}
+
+@media (max-width: 500px) {
+  .initial-banner {
+    overflow-x: hidden;
+    height: 150svh;
+  }
+
+  #initial-banner__video {
+    height: 100svh;
+  }
+
+  #initial-banner__video-container {
+    height: 100svh;
+    width: 97.5svw;
+  }
+
+  .about-tokyo-container {
+    height: 200svh;
+    margin: 3em auto;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    align-content: center;
+  }
+
+  .about-tokyo-container__img {
+    height: 50%;
+    width: 80%;
+    margin: 0;
+
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  }
+
+  .about-tokyo-container__txt-block {
+    width: 95%;
+    text-align: left;
+    margin: 0;
+  }
+
+  .text-column-sect {
+    height: 250svh;
+  }
+
+  .text-column-sect__list > h3 {
+    margin: 80% 0;
+    font-size: 3rem;
+    font-family: "Noto Sans", sans-serif;
+  }
+
+  .touristic-places-container__gallery > img {
+    height: 35%;
+    width: 50%;
+  }
+
+  .touristic-places {
+    height: 90svh;
+  }
+
+  .final-sect {
+    height: 120svh;
+  }
+
+  .final-sect__txt-block > h4 {
+    width: 90%;
+  }
+}
